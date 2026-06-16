@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "moa-actuator"
+version = "0.1.0"
+description = "DoSA 2D/3D actuator design automation with Maxwell/FEMM/GetDP solvers and PyQt6 GUI"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "MoaSysConverg"},
+]
+
+dependencies = [
+    "pydantic>=2.0",
+    "numpy",
+]
+
+[project.optional-dependencies]
+maxwell = ["pyaedt>=0.9"]
+femm = ["pyfemm"]
+gui = ["PyQt6>=6.4", "matplotlib"]
+all = ["pyaedt>=0.9", "pyfemm", "PyQt6>=6.4", "matplotlib"]
+
+[project.scripts]
+moa-actuator = "moa_actuator.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["moa_actuator"]

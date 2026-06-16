@@ -34,3 +34,6 @@ obj/
 Thumbs.db
 .DS_Store
 desktop.ini
+
+# output
+output/
