@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "mode": "2d",
+  "dry_run": true,
+  "profile": {
+    "name": "ws01_2020r1",
+    "source_pdf": "MAXW_Actuator_2020R1_EN_WS01.pdf",
+    "solution_type": "Transient",
+    "time_step": "0.2ms",
+    "stop_time": "20ms",
+    "mesh_hint": "medium_fine",
+    "notes": "Workshop-style transient preset aligned to WS01 actuator workflow."
+  },
+  "design_name": "",
+  "parts": 4,
+  "tests": 3,
+  "message": "Dry-run complete. Maxwell session was not started."
+}

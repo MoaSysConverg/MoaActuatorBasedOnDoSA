@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "mode": "2d",
+  "dry_run": true,
+  "live_session": false,
+  "profile": {
+    "name": "le01_2020r1",
+    "source_pdf": "MAXW_Actuator_2020R1_EN_LE01.pdf",
+    "solution_type": "Magnetostatic",
+    "time_step": "1ms",
+    "stop_time": "5ms",
+    "mesh_hint": "balanced",
+    "notes": "Lecture preset for concept validation."
+  },
+  "design_name": "",
+  "parts": 4,
+  "tests": 3,
+  "commands_count": 13,
+  "errors": [],
+  "message": "Build complete. 13 commands recorded."
+}

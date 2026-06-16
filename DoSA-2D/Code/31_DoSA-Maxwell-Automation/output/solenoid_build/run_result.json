@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "mode": "2d",
+  "dry_run": true,
+  "live_session": false,
+  "profile": {
+    "name": "ws01_2020r1",
+    "source_pdf": "MAXW_Actuator_2020R1_EN_WS01.pdf",
+    "solution_type": "Transient",
+    "time_step": "0.2ms",
+    "stop_time": "20ms",
+    "mesh_hint": "medium_fine",
+    "notes": "Workshop preset for actuator transient flow."
+  },
+  "design_name": "",
+  "parts": 4,
+  "tests": 3,
+  "commands_count": 13,
+  "errors": [],
+  "message": "Build complete. 13 commands recorded."
+}

@@ -1,0 +1,222 @@
+{
+  "design_name": "",
+  "mode": "2d",
+  "profile": {
+    "name": "ws01_2020r1",
+    "source_pdf": "MAXW_Actuator_2020R1_EN_WS01.pdf",
+    "solution_type": "Transient",
+    "time_step": "0.2ms",
+    "stop_time": "20ms",
+    "mesh_hint": "medium_fine",
+    "notes": "Workshop preset for actuator transient flow."
+  },
+  "commands": [
+    {
+      "method": "modeler.create_polyline",
+      "args": {
+        "name": "coil",
+        "points": [
+          [
+            4.8,
+            -2.0,
+            0.0
+          ],
+          [
+            10.8,
+            -2.0,
+            0.0
+          ],
+          [
+            10.8,
+            14.0,
+            0.0
+          ],
+          [
+            4.8,
+            14.0,
+            0.0
+          ]
+        ],
+        "close": true
+      }
+    },
+    {
+      "method": "modeler.create_polyline",
+      "args": {
+        "name": "plunger",
+        "points": [
+          [
+            0.0,
+            -15.0,
+            0.0
+          ],
+          [
+            4.0,
+            -15.0,
+            0.0
+          ],
+          [
+            4.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "close": true
+      }
+    },
+    {
+      "method": "modeler.create_polyline",
+      "args": {
+        "name": "core",
+        "points": [
+          [
+            0.0,
+            1.2,
+            0.0
+          ],
+          [
+            4.0,
+            1.2,
+            0.0
+          ],
+          [
+            4.0,
+            14.8,
+            0.0
+          ],
+          [
+            15.6,
+            14.8,
+            0.0
+          ],
+          [
+            15.6,
+            19.2,
+            0.0
+          ],
+          [
+            0.0,
+            19.2,
+            0.0
+          ]
+        ],
+        "close": true
+      }
+    },
+    {
+      "method": "modeler.create_polyline",
+      "args": {
+        "name": "case",
+        "points": [
+          [
+            4.4,
+            -10.4,
+            0.0
+          ],
+          [
+            15.6,
+            -10.4,
+            0.0
+          ],
+          [
+            15.6,
+            14.8,
+            0.0
+          ],
+          [
+            11.8,
+            14.8,
+            0.0
+          ],
+          [
+            11.8,
+            -2.8,
+            0.0
+          ],
+          [
+            4.4,
+            -2.8,
+            0.0
+          ]
+        ],
+        "close": true
+      }
+    },
+    {
+      "method": "assign_material",
+      "args": {
+        "object_name": "coil",
+        "material": "copper"
+      }
+    },
+    {
+      "method": "assign_material",
+      "args": {
+        "object_name": "plunger",
+        "material": "steel_stainless_430"
+      }
+    },
+    {
+      "method": "assign_material",
+      "args": {
+        "object_name": "core",
+        "material": "steel_1010"
+      }
+    },
+    {
+      "method": "assign_material",
+      "args": {
+        "object_name": "case",
+        "material": "steel_1010"
+      }
+    },
+    {
+      "method": "create_setup",
+      "args": {
+        "name": "DoSA_Setup",
+        "solution_type": "Transient",
+        "time_step": "0.2ms",
+        "stop_time": "20ms"
+      }
+    },
+    {
+      "method": "assign_coil",
+      "args": {
+        "object_name": "coil",
+        "conductors_number": 1040,
+        "polarity": "Positive"
+      }
+    },
+    {
+      "method": "assign_translate_motion",
+      "args": {
+        "band_objects": [
+          "plunger"
+        ],
+        "axis": "Y",
+        "positive_limit": "5mm",
+        "negative_limit": "5mm"
+      }
+    },
+    {
+      "method": "assign_force",
+      "args": {
+        "object_name": "plunger"
+      }
+    },
+    {
+      "method": "assign_winding_current",
+      "args": {
+        "coil_name": "coil",
+        "current_a": 0.95335,
+        "voltage_v": 14.5
+      }
+    }
+  ],
+  "errors": []
+}

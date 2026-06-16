@@ -1,0 +1,211 @@
+{
+  "design_name": "",
+  "mode": "2d",
+  "profile": {
+    "name": "le01_2020r1",
+    "source_pdf": "MAXW_Actuator_2020R1_EN_LE01.pdf",
+    "solution_type": "Magnetostatic",
+    "time_step": "1ms",
+    "stop_time": "5ms",
+    "mesh_hint": "balanced",
+    "notes": "Lecture preset for concept validation."
+  },
+  "commands": [
+    {
+      "method": "modeler.create_polyline",
+      "args": {
+        "name": "coil",
+        "points": [
+          [
+            1.5,
+            -0.69,
+            0.0
+          ],
+          [
+            1.865,
+            -0.69,
+            0.0
+          ],
+          [
+            1.865,
+            0.51,
+            0.0
+          ],
+          [
+            1.5,
+            0.51,
+            0.0
+          ]
+        ],
+        "close": true
+      }
+    },
+    {
+      "method": "modeler.create_polyline",
+      "args": {
+        "name": "magnet",
+        "points": [
+          [
+            0.0,
+            1.4,
+            0.0
+          ],
+          [
+            0.0,
+            0.4,
+            0.0
+          ],
+          [
+            1.35,
+            0.4,
+            0.0
+          ],
+          [
+            1.35,
+            1.4,
+            0.0
+          ]
+        ],
+        "close": true
+      }
+    },
+    {
+      "method": "modeler.create_polyline",
+      "args": {
+        "name": "plate",
+        "points": [
+          [
+            0.0,
+            0.4,
+            0.0
+          ],
+          [
+            0.0,
+            0.2,
+            0.0
+          ],
+          [
+            1.35,
+            0.2,
+            0.0
+          ],
+          [
+            1.35,
+            0.4,
+            0.0
+          ]
+        ],
+        "close": true
+      }
+    },
+    {
+      "method": "modeler.create_polyline",
+      "args": {
+        "name": "yoke",
+        "points": [
+          [
+            0.0,
+            1.6,
+            0.0
+          ],
+          [
+            0.0,
+            1.4,
+            0.0
+          ],
+          [
+            2.05,
+            1.4,
+            0.0
+          ],
+          [
+            2.05,
+            0.2,
+            0.0
+          ],
+          [
+            2.25,
+            0.2,
+            0.0
+          ],
+          [
+            2.25,
+            1.6,
+            0.0
+          ]
+        ],
+        "close": true
+      }
+    },
+    {
+      "method": "assign_material",
+      "args": {
+        "object_name": "coil",
+        "material": "copper"
+      }
+    },
+    {
+      "method": "assign_material",
+      "args": {
+        "object_name": "magnet",
+        "material": "NdFe52"
+      }
+    },
+    {
+      "method": "assign_magnet_direction",
+      "args": {
+        "object_name": "magnet",
+        "direction": [
+          0.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "method": "assign_material",
+      "args": {
+        "object_name": "plate",
+        "material": "steel_1010"
+      }
+    },
+    {
+      "method": "assign_material",
+      "args": {
+        "object_name": "yoke",
+        "material": "steel_1010"
+      }
+    },
+    {
+      "method": "create_setup",
+      "args": {
+        "name": "DoSA_Setup",
+        "solution_type": "Magnetostatic",
+        "percent_refinement": 30,
+        "max_passes": 10
+      }
+    },
+    {
+      "method": "assign_coil",
+      "args": {
+        "object_name": "coil",
+        "conductors_number": 120,
+        "polarity": "Positive"
+      }
+    },
+    {
+      "method": "assign_force",
+      "args": {
+        "object_name": "coil"
+      }
+    },
+    {
+      "method": "assign_winding_current",
+      "args": {
+        "coil_name": "coil",
+        "current_a": 0.16669,
+        "voltage_v": 2.5
+      }
+    }
+  ],
+  "errors": []
+}

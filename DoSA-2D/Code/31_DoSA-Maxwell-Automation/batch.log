@@ -1,0 +1,492 @@
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 9:07:52 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] GRPC server running on port: 62040.
+
+[info] Project:DoSA_Project, License electronics2d_gui expires in 12 days. (09:09:07 PM  May 04, 2026)
+[info] Project:DoSA_Project, License electronics_desktop expires in 12 days. (09:09:07 PM  May 04, 2026)
+[error] Property 'Material' does not exist.
+Stopping Batch Run: 9:09:54 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 9:24:54 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] GRPC server running on port: 62810.
+
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/tutorial_solenoid_3d/DoSA_Project.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/tutorial_solenoid_3d/DoSA_Project.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/tutorial_solenoid_3d/DoSA_Project.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/tutorial_solenoid_3d/DoSA_Project.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/tutorial_solenoid_3d/DoSA_Project.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/tutorial_solenoid_3d/DoSA_Project.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+Stopping Batch Run: 9:25:26 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 9:25:41 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] GRPC server running on port: 62856.
+
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/tutorial_vcm_3d/DoSA_Project.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/tutorial_vcm_3d/DoSA_Project.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/tutorial_vcm_3d/DoSA_Project.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/tutorial_vcm_3d/DoSA_Project.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/tutorial_vcm_3d/DoSA_Project.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/tutorial_vcm_3d/DoSA_Project.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+Stopping Batch Run: 9:26:11 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 9:42:06 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] GRPC server running on port: 63606.
+
+[info] Project:DoSA_Project, License electronics3d_gui expires in 12 days. (09:43:20 PM  May 04, 2026)
+[info] Project:DoSA_Project, License electronics_desktop expires in 12 days. (09:43:20 PM  May 04, 2026)
+[error] Excitation 'Coil_coil': Cannot apply Coil Terminal Excitation to non planar entity.
+Stopping Batch Run: 9:44:02 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 9:44:18 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] GRPC server running on port: 63693.
+
+[info] Project:DoSA_Project, License electronics3d_gui expires in 12 days. (09:45:32 PM  May 04, 2026)
+[info] Project:DoSA_Project, License electronics_desktop expires in 12 days. (09:45:32 PM  May 04, 2026)
+[error] Project:DoSA_Project, Design:DoSA_Design (Magnetostatic), Script macro error: Excitation 'Coil_coil': Cannot apply Coil Terminal Excitation to non planar entity. (09:45:54 PM  May 04, 2026)
+Stopping Batch Run: 9:46:05 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 9:48:25 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] GRPC server running on port: 64581.
+
+[info] Project:DoSA_Project, License electronics2d_gui expires in 12 days. (09:49:38 PM  May 04, 2026)
+[info] Project:DoSA_Project, License electronics_desktop expires in 12 days. (09:49:38 PM  May 04, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Design (Transient, XY), 'Solve inside' for object 'coil' is set, due to material assignment change. (09:50:00 PM  May 04, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Design (Transient, XY), 'Solve inside' for object 'core' is set, due to material assignment change. (09:50:01 PM  May 04, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Design (Transient, XY), 'Solve inside' for object 'case' is set, due to material assignment change. (09:50:01 PM  May 04, 2026)
+[error] Invalid object selected for band. No objects within the band.
+Stopping Batch Run: 9:50:12 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 9:50:27 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] GRPC server running on port: 64668.
+
+[info] Project:DoSA_Project, License electronics2d_gui expires in 12 days. (09:51:41 PM  May 04, 2026)
+[info] Project:DoSA_Project, License electronics_desktop expires in 12 days. (09:51:41 PM  May 04, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Design (Magnetostatic, XY), 'Solve inside' for object 'coil' is set, due to material assignment change. (09:52:03 PM  May 04, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Design (Magnetostatic, XY), 'Solve inside' for object 'plate' is set, due to material assignment change. (09:52:03 PM  May 04, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Design (Magnetostatic, XY), 'Solve inside' for object 'yoke' is set, due to material assignment change. (09:52:03 PM  May 04, 2026)
+Stopping Batch Run: 9:52:21 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 9:52:36 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] GRPC server running on port: 64755.
+
+[info] Project:DoSA_Project, License electronics3d_gui expires in 12 days. (09:53:50 PM  May 04, 2026)
+[info] Project:DoSA_Project, License electronics_desktop expires in 12 days. (09:53:50 PM  May 04, 2026)
+[error] Excitation 'Coil_coil': Cannot apply Coil Terminal Excitation to non planar entity.
+Stopping Batch Run: 9:54:23 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 9:56:32 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] GRPC server running on port: 65037.
+
+[info] Project:DoSA_Project, License electronics2d_gui expires in 12 days. (09:57:45 PM  May 04, 2026)
+[info] Project:DoSA_Project, License electronics_desktop expires in 12 days. (09:57:45 PM  May 04, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Design (Transient, XY), 'Solve inside' for object 'coil' is set, due to material assignment change. (09:58:08 PM  May 04, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Design (Transient, XY), 'Solve inside' for object 'core' is set, due to material assignment change. (09:58:08 PM  May 04, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Design (Transient, XY), 'Solve inside' for object 'case' is set, due to material assignment change. (09:58:08 PM  May 04, 2026)
+[error] Invalid object selected for band. No objects within the band.
+Stopping Batch Run: 9:58:19 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 9:58:33 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] GRPC server running on port: 65127.
+
+[info] Project:DoSA_Project, License electronics2d_gui expires in 12 days. (09:59:46 PM  May 04, 2026)
+[info] Project:DoSA_Project, License electronics_desktop expires in 12 days. (09:59:46 PM  May 04, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Design (Magnetostatic, XY), 'Solve inside' for object 'coil' is set, due to material assignment change. (10:00:08 PM  May 04, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Design (Magnetostatic, XY), 'Solve inside' for object 'plate' is set, due to material assignment change. (10:00:09 PM  May 04, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Design (Magnetostatic, XY), 'Solve inside' for object 'yoke' is set, due to material assignment change. (10:00:09 PM  May 04, 2026)
+Stopping Batch Run: 10:00:19 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:00:33 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] GRPC server running on port: 65224.
+
+[info] Project:DoSA_Project, License electronics3d_gui expires in 12 days. (10:01:46 PM  May 04, 2026)
+[info] Project:DoSA_Project, License electronics_desktop expires in 12 days. (10:01:46 PM  May 04, 2026)
+[error] Excitation 'Coil_coil': Cannot apply Coil Terminal Excitation to non planar entity.
+Stopping Batch Run: 10:02:28 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:02:42 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] GRPC server running on port: 65311.
+
+[info] Project:DoSA_Project, License electronics3d_gui expires in 12 days. (10:03:56 PM  May 04, 2026)
+[info] Project:DoSA_Project, License electronics_desktop expires in 12 days. (10:03:56 PM  May 04, 2026)
+[error] Project:DoSA_Project, Design:DoSA_Design (Magnetostatic), Script macro error: Excitation 'Coil_coil': Cannot apply Coil Terminal Excitation to non planar entity. (10:04:18 PM  May 04, 2026)
+Stopping Batch Run: 10:04:29 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:04:43 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] GRPC server running on port: 65426.
+
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:05:08 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] GRPC server running on port: 65441.
+
+[info] Project:test, License electronics2d_gui expires in 12 days. (10:06:23 PM  May 04, 2026)
+[info] Project:test, License electronics_desktop expires in 12 days. (10:06:23 PM  May 04, 2026)
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:07:13 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] GRPC server running on port: 49267.
+
+[info] Project:DoSA_Project, License electronics2d_gui expires in 12 days. (10:08:28 PM  May 04, 2026)
+[info] Project:DoSA_Project, License electronics_desktop expires in 12 days. (10:08:28 PM  May 04, 2026)
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:26:05 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 49864 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+Stopping Batch Run: 10:26:33 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:26:59 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 49928 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+Stopping Batch Run: 10:27:28 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:29:49 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 50099 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+Stopping Batch Run: 10:30:13 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:32:48 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 50219 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+[error] The project file path E:/KDH/gitDosa_Actuator/DoSA-2D/Code/31_DoSA-Maxwell-Automation/output/solenoid_2d/Solenoid.aedt is invalid. The project file path cannot be empty and the directory must already exist. The characters \/:*?<>| cannot be in the project name and there must be no leading or trailing spaces.
+Stopping Batch Run: 10:33:19 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:34:34 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 50300 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[info] Project:Project27, License electronics2d_gui expires in 12 days. (10:35:30 PM  May 04, 2026)
+[info] Project:Project27, License electronics_desktop expires in 12 days. (10:35:30 PM  May 04, 2026)
+[warning] Project:Project27, Design:Solenoid_2D (Magnetostatic, XY), 'Solve inside' for object 'coil' is set, due to material assignment change. (10:35:53 PM  May 04, 2026)
+[warning] Project:Project27, Design:Solenoid_2D (Magnetostatic, XY), 'Solve inside' for object 'core' is set, due to material assignment change. (10:35:54 PM  May 04, 2026)
+[warning] Project:Project27, Design:Solenoid_2D (Magnetostatic, XY), 'Solve inside' for object 'case' is set, due to material assignment change. (10:35:54 PM  May 04, 2026)
+[error] Project:Project27, Design:Solenoid_2D (Magnetostatic, XY), Script macro error: Excitation 'Coil_coil': To assign a coil terminal to a solid winding, the conductor number should be 1. (10:35:54 PM  May 04, 2026)
+Stopping Batch Run: 10:36:14 PM  May 04, 2026
+Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:35:57 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 50360 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[info] Project:Project26, License electronics2d_gui expires in 12 days. (10:36:53 PM  May 04, 2026)
+[info] Project:Project26, License electronics_desktop expires in 12 days. (10:36:53 PM  May 04, 2026)
+  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 50419 of local host. Only connections from the local host initiated by the same user are permitted.
+
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:37:27 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+-- Message Window --
+      *Global - Messages
+        [info] gRPC server started on port 50546 of local host. Only connections from the local host initiated by the same user are permitted. 
+-- Message Window --
+Stopping Batch Run: 10:41:16 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:46:08 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 50829. 
+-- Message Window --
+Stopping Batch Run: 10:47:12 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:47:28 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 50903. 
+-- Message Window --
+Stopping Batch Run: 10:49:42 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:50:54 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 51064. 
+-- Message Window --
+Stopping Batch Run: 10:53:07 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:54:15 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+-- Message Window --
+      *Global - Messages
+        [info] gRPC server started on port 51270 of local host. Only connections from the local host initiated by the same user are permitted. 
+-- Message Window --
+Stopping Batch Run: 10:57:38 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:58:09 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+-- Message Window --
+      *Global - Messages
+        [info] gRPC server started on port 51401 of local host. Only connections from the local host initiated by the same user are permitted. 
+-- Message Window --
+Stopping Batch Run: 11:40:32 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:46:25 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+-- Message Window --
+      *Global - Messages
+        [info] gRPC server started on port 52575 of local host. Only connections from the local host initiated by the same user are permitted. 
+-- Message Window --
+Stopping Batch Run: 11:48:33 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:49:21 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:53:33 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:55:54 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 53064 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[info] Project:Project29, License electronics2d_gui expires in 12 days. (11:56:53 PM  May 04, 2026)
+[info] Project:Project29, License electronics_desktop expires in 12 days. (11:56:53 PM  May 04, 2026)
+Stopping Batch Run: 11:57:10 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:57:47 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 53144 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[info] Project:Project29, License electronics2d_gui expires in 12 days. (11:58:46 PM  May 04, 2026)
+[info] Project:Project29, License electronics_desktop expires in 12 days. (11:58:46 PM  May 04, 2026)
+Stopping Batch Run: 11:59:28 PM  May 04, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:59:53 PM  May 04, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 53225 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[info] Project:Project29, License electronics2d_gui expires in 11 days. (12:00:52 AM  May 05, 2026)
+[info] Project:Project29, License electronics_desktop expires in 11 days. (12:00:52 AM  May 05, 2026)
+Stopping Batch Run: 12:01:35 AM  May 05, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:01:56 AM  May 05, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 53329 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[info] Project:Project29, License electronics2d_gui expires in 11 days. (12:02:55 AM  May 05, 2026)
+[info] Project:Project29, License electronics_desktop expires in 11 days. (12:02:55 AM  May 05, 2026)
+Stopping Batch Run: 12:03:06 AM  May 05, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:04:02 AM  May 05, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project28.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .

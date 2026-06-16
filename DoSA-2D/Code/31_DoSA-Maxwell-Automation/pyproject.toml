@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dosa-maxwell"
+version = "0.1.0"
+description = "DoSA 2D/3D to Ansys Maxwell automation bridge"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "DoSA Team"}]
+dependencies = [
+  "pydantic>=2.6",
+]
+
+[project.optional-dependencies]
+maxwell = [
+  "ansys-aedt-core>=0.14.0",
+]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+dosa-maxwell = "dosa_maxwell.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
