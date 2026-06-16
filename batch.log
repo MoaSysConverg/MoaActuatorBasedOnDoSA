@@ -1,0 +1,15 @@
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:29:26 PM  Jun 16, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 62634 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[info] Project:DoSA_Project, License electronics2d_gui expires in 1 days. (11:30:24 PM  Jun 16, 2026)
+[info] Project:DoSA_Project, License electronics_desktop expires in 1 days. (11:30:24 PM  Jun 16, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, XY), 'Solve inside' for object 'coil' is set, due to material assignment change. (11:30:47 PM  Jun 16, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, XY), 'Solve inside' for object 'core' is set, due to material assignment change. (11:30:47 PM  Jun 16, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, XY), 'Solve inside' for object 'case' is set, due to material assignment change. (11:30:47 PM  Jun 16, 2026)

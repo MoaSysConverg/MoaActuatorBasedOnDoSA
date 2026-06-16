@@ -1,0 +1,104 @@
+{
+  "version": "0.1.0",
+  "scope": "DoSA-2D/3D to Maxwell automation",
+  "sources": {
+    "dosa_2d": "Code/11_DoSA-2D/DoSA-2D",
+    "dosa_3d": "../DoSA-3D/Code/01_DoSA-3D/DoSA-3D",
+    "pdf_ws01": "E:/KDH/gitDosa_Actuator/DoSA-2D/MAXW_Actuator_2020R1_EN_WS01.pdf",
+    "pdf_le01": "E:/KDH/gitDosa_Actuator/DoSA-2D/MAXW_Actuator_2020R1_EN_LE01.pdf",
+    "pdf_coupling_2014": "E:/KDH/gitDosa_Actuator/DoSA-2D/coupling_solenoid_1114_2014.pdf",
+    "pdf_tpc_2014": "E:/KDH/gitDosa_Actuator/DoSA-2D/TPC_Solenoid_1210_2014.pdf"
+  },
+  "profiles": [
+    {
+      "name": "default",
+      "source_pdf": "internal",
+      "solution_type": "MagnetostaticZ",
+      "time_step": "1ms",
+      "stop_time": "10ms",
+      "mesh_hint": "balanced",
+      "notes": "Safe baseline profile for early integration (2D axisymmetric about Z)."
+    },
+    {
+      "name": "ws01_2020r1",
+      "source_pdf": "MAXW_Actuator_2020R1_EN_WS01.pdf",
+      "solution_type": "TransientZ",
+      "time_step": "0.2ms",
+      "stop_time": "20ms",
+      "mesh_hint": "medium_fine",
+      "notes": "Workshop preset for actuator transient flow (2D axisymmetric about Z)."
+    },
+    {
+      "name": "le01_2020r1",
+      "source_pdf": "MAXW_Actuator_2020R1_EN_LE01.pdf",
+      "solution_type": "MagnetostaticZ",
+      "time_step": "1ms",
+      "stop_time": "5ms",
+      "mesh_hint": "balanced",
+      "notes": "Lecture preset for concept validation (2D axisymmetric about Z)."
+    },
+    {
+      "name": "coupling_1114_2014",
+      "source_pdf": "coupling_solenoid_1114_2014.pdf",
+      "solution_type": "TransientZ",
+      "time_step": "0.2ms",
+      "stop_time": "20ms",
+      "mesh_hint": "medium_fine",
+      "notes": "2014 coupling solenoid profile (2D axisymmetric about Z)."
+    },
+    {
+      "name": "tpc_1210_2014",
+      "source_pdf": "TPC_Solenoid_1210_2014.pdf",
+      "solution_type": "MagnetostaticZ",
+      "time_step": "1ms",
+      "stop_time": "5ms",
+      "mesh_hint": "balanced",
+      "notes": "2014 TPC solenoid profile (2D axisymmetric about Z)."
+    }
+  ],
+  "traceability": [
+    {
+      "dosa_object": "CCoil",
+      "dosa_source": "Parts.cs",
+      "pdf_topic": "coil and winding setup",
+      "maxwell_target": "assign_winding and assign_current",
+      "module": "src/dosa_maxwell/maxwell_runner.py"
+    },
+    {
+      "dosa_object": "CMagnet",
+      "dosa_source": "Parts.cs",
+      "pdf_topic": "magnet material and orientation",
+      "maxwell_target": "material assignment and direction mapping",
+      "module": "src/dosa_maxwell/mapping.py"
+    },
+    {
+      "dosa_object": "Force Test",
+      "dosa_source": "FormMain.cs",
+      "pdf_topic": "force extraction workflow",
+      "maxwell_target": "postprocess force report",
+      "module": "src/dosa_maxwell/maxwell_runner.py"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M1",
+      "title": "schema and parser freeze",
+      "status": "completed"
+    },
+    {
+      "id": "M2",
+      "title": "2d dry-run with profile",
+      "status": "completed"
+    },
+    {
+      "id": "M3",
+      "title": "2d geometry mapping",
+      "status": "completed"
+    },
+    {
+      "id": "M4",
+      "title": "3d step import and run",
+      "status": "not-started"
+    }
+  ]
+}
