@@ -27,16 +27,25 @@ class RunConfig:
     dry_run: bool = False
     aedt_version: str = "2026.1"
     non_graphical: bool = True
+    new_desktop: bool = True  # False = attach to running AEDT session
+    # Overrides from GUI (if set, these take precedence over profile defaults)
+    solution_type: str = ""
+    time_step: str = ""
+    stop_time: str = ""
+    mesh_hint: str = ""
 
 
 def get_solver_backend(config: RunConfig) -> SolverBackend:
     """Instantiate the appropriate solver backend."""
     if config.solver == "maxwell":
         profile = get_profile(config.profile)
+        # GUI overrides take precedence over profile defaults
+        solution_type = config.solution_type or profile.solution_type
         return MaxwellBackend(
             aedt_version=config.aedt_version,
             non_graphical=config.non_graphical,
-            solution_type=profile.solution_type,
+            new_desktop=config.new_desktop,
+            solution_type=solution_type,
         )
     elif config.solver == "femm":
         from .solvers.femm_backend import FemmBackend
@@ -73,13 +82,15 @@ def run(config: RunConfig) -> SolveResult:
             errors=[f"Solver '{backend.name}' does not support mode '{config.mode}'"],
         )
 
-    # Execute
+    # Execute — GUI overrides take precedence over profile defaults
     profile = get_profile(config.profile)
+    stop_time = config.stop_time or profile.stop_time
+    time_step = config.time_step or profile.time_step
     return backend.solve(
         design=design,
         mode=config.mode,
         out_dir=config.out_dir,
         dry_run=config.dry_run,
-        stop_time=profile.stop_time,
-        time_step=profile.time_step,
+        stop_time=stop_time,
+        time_step=time_step,
     )

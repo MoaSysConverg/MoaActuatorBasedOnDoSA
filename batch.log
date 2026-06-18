@@ -13,3 +13,278 @@ Project directory: C:\Users\user\Documents\Ansoft
 [warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, XY), 'Solve inside' for object 'coil' is set, due to material assignment change. (11:30:47 PM  Jun 16, 2026)
 [warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, XY), 'Solve inside' for object 'core' is set, due to material assignment change. (11:30:47 PM  Jun 16, 2026)
 [warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, XY), 'Solve inside' for object 'case' is set, due to material assignment change. (11:30:47 PM  Jun 16, 2026)
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:47:51 AM  Jun 17, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+-- Message Window --
+      *Global - Messages
+        [info] gRPC server started on port 57536 of local host. Only connections from the local host initiated by the same user are permitted. 
+-- Message Window --
+Stopping Batch Run: 11:04:45 AM  Jun 17, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:16:00 AM  Jun 18, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 56178 of local host. Only connections from the local host initiated by the same user are permitted.
+
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:32:15 AM  Jun 18, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 57166 of local host. Only connections from the local host initiated by the same user are permitted.
+
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:35:56 AM  Jun 18, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 57337 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), 'Solve inside' for object 'coil' is set, due to material assignment change. (10:37:16 AM  Jun 18, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), 'Solve inside' for object 'case' is set, due to material assignment change. (10:37:17 AM  Jun 18, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name coil is already used, use name coil_1. (10:40:33 AM  Jun 18, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name plunger is already used, use name plunger_1. (10:40:33 AM  Jun 18, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name core is already used, use name core_1. (10:40:33 AM  Jun 18, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name case is already used, use name case_1. (10:40:33 AM  Jun 18, 2026)
+[error] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Script macro error: Duplicate excitation name: 'Coil_coil' (10:40:33 AM  Jun 18, 2026)
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:54:51 AM  Jun 18, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [info] gRPC server started on port 60367 of local host. Only connectionsRunning as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [info] The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+      DoSA_Project (E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/)
+        DoSA_Project (Magnetostatic, about Z)
+          [error] Excitation 'Coil_coil' is not assigned to any winding. (11:29:21 AM  Jun 18, 2026)
+          [error] Simulation completed with execution error on server: Local Machine. (11:29:23 AM  Jun 18, 2026)
+-- Message Window --
+Stopping Batch Run: 11:31:07 AM  Jun 18, 2026
+M  Jun 18, 2026)
+          [warning] Part Attributes: Name case is already used, use name case_1. (10:56:19 AM  Jun 18, 2026)
+          [error] Script macro error: Duplicate excitation name: 'Coil_coil' (10:56:19 AM  Jun 18, 2026)
+          [warning] 'Solve inside' for object 'core' is set, due to material assignment change. (10:58:29 AM  Jun 18, 2026)
+          [warning] 'Solve inside' for object 'plunger' is set, due to material assignment change. (10:58:31 AM  Jun 18, 2026)
+-- Message Window --
+Stopping Batch Run: 11:10:08 AM  Jun 18, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:17:04 AM  Jun 18, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 61298 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (11:21:49 AM  Jun 18, 2026)
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (11:21:49 AM  Jun 18, 2026)
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (11:21:49 AM  Jun 18, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), 'Solve inside' for object 'coil' is set, due to material assignment change. (06:28:01 PM  Jun 18, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), 'Solve inside' for object 'plunger' is set, due to material assignment change. (06:28:01 PM  Jun 18, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), 'Solve inside' for object 'core' is set, due to material assignment change. (06:28:01 PM  Jun 18, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), 'Solve inside' for object 'case' is set, due to material assignment change. (06:28:01 PM  Jun 18, 2026)
+nics Desktop has found a recovery file for an unsaved project : Project2.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 4:44:57 PM  Jun 18, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project2.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project3.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[error] Project "Project4" cannot be closed/deleted because it is in use by another application.
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 5:00:31 PM  Jun 18, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project2.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project3.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project4.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[error] Excitation 'Current1': A geometry selection is required for assignment.
+
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[error] Project "Solenoid" cannot be closed/deleted because it is in use by another application.
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] The project selected and all the files from aedtresults folder (including the folder) will be deleted from the permanent storage medium.
+
+WARNING: All work will be lost.
+
+Click OK to proceed.
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] I/O error in reading design
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] I/O error in reading design
+The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] I/O error in reading design
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] I/O error in reading design
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] I/O error in reading design
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] I/O error in reading design
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] I/O error in reading design
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] I/O error in reading design
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+ a recovery file for an unsaved project : Project2.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project3.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project4.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [info] gRPC server started on port 53358 of local host. Only connections from the local host initiated by the same user are permitted. 
+        [warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard. 
+        [warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+      DoSA_Project (E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/)
+        DoSA_Project (Magnetostatic, about Z)
+          [warning] Part Attributes: Name coil is already used, use name coil_1. (06:06:39 PM  Jun 18, 2026)
+          [warning] Part Attributes: Name plunger is already used, use name plunger_1. (06:06:39 PM  Jun 18, 2026)
+          [warning] Part Attributes: Name core is already used, use name core_1. (06:06:40 PM  Jun 18, 2026)
+          [warning] Part Attributes: Name case is already used, use name case_1. (06:06:41 PM  Jun 18, 2026)
+-- Message Window --
+Stopping Batch Run: 6:15:19 PM  Jun 18, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 6:45:01 PM  Jun 18, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project2.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project3.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project4.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[error] Project "DoSA_Project" cannot be closed/deleted because it is in use by another application.
+[error] Project "DoSA_Project" cannot be closed/deleted because it is in use by another application.
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [error] Project "DoSA_Project" cannot be closed/deleted because it is in use by another application.
+        [warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard. 
+        [warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+        [info] The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+Stopping Batch Run: 6:55:29 PM  Jun 18, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 6:55:35 PM  Jun 18, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 56066 of local host. Only connections from the local host initiated by the same user are permitted.
+
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 7:01:27 PM  Jun 18, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 56267 of local host. Only connections from the local host initiated by the same user are permitted.
+
