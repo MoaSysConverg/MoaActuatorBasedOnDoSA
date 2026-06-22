@@ -29,6 +29,12 @@ def write_dosa_file(design: DesignModel, path: str | Path) -> None:
                 _write_shape_points(lines, value)
             else:
                 lines.append(f'    {key}={value}')
+
+        # Write Shape child nodes (geometry from DoSA or AEDT)
+        for child in part.children:
+            if child.kind == "Shape":
+                _write_shape_child(lines, child)
+
         lines.append(f'  $end "{part.kind}"')
         lines.append("")
 
@@ -48,7 +54,7 @@ def write_dosa_file(design: DesignModel, path: str | Path) -> None:
 
 
 def _write_shape_points(lines: list[str], points: list) -> None:
-    """Write shape points block."""
+    """Write shape points block from properties dict format."""
     lines.append(f'    $begin "Shape"')
     lines.append(f'      FaceType=Polygon')
     lines.append(f'      PointCount={len(points)}')
@@ -60,3 +66,36 @@ def _write_shape_points(lines: list[str], points: list) -> None:
         lines.append(f'      X{i}={x}')
         lines.append(f'      Y{i}={y}')
     lines.append(f'    $end "Shape"')
+
+
+def _write_shape_child(lines: list[str], shape_node: NodeModel) -> None:
+    """Write Shape child node using raw_lines (DoSA native format).
+
+    raw_lines contain: BasePointX=, BasePointY=, FaceType=,
+    and PointX=/PointY= pairs.
+    """
+    lines.append('    $begin "Shape"')
+    if shape_node.raw_lines:
+        for raw in shape_node.raw_lines:
+            lines.append(f'      {raw}')
+    else:
+        # Fallback: write from properties
+        props = shape_node.properties
+        lines.append(
+            f'      BasePointX={props.get("BasePointX", 0)}'
+        )
+        lines.append(
+            f'      BasePointY={props.get("BasePointY", 0)}'
+        )
+        lines.append(
+            f'      FaceType={props.get("FaceType", "POLYGON")}'
+        )
+        # Serialize point list if present in properties
+        i = 0
+        while f"X{i}" in props and f"Y{i}" in props:
+            lines.append(f'      PointX={props[f"X{i}"]}')
+            lines.append(f'      PointY={props[f"Y{i}"]}')
+            lines.append('      LineKind=STRAIGHT')
+            lines.append('      ArcDriction=FORWARD')
+            i += 1
+    lines.append('    $end "Shape"')

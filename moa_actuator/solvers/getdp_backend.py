@@ -21,7 +21,7 @@ import subprocess
 from pathlib import Path
 from typing import Any
 
-from ..bh_data import BHCurve, generate_bh_pro, parse_dmat_file
+from ..bh_data import BHCurve, generate_bh_pro, parse_dmat_file, resolve_bh_curve
 from ..geometry import extract_geometry
 from ..mapping import resolve_magnet_direction_3d, resolve_material
 from ..models import DesignModel, NodeModel, TestModel
@@ -99,8 +99,14 @@ class GetDPBackend(SolverBackend):
 
         # 2. BH.pro
         steel_parts = [p for p in design.parts if p.kind == "Steel"]
-        needed_materials = {p.properties.get("Material", "") for p in steel_parts}
-        needed_bh = {k: v for k, v in bh_materials.items() if k in needed_materials}
+        needed_bh = {}
+        part_to_curve_name = {}
+        for p in steel_parts:
+            mat_name = p.properties.get("Material", "")
+            curve = resolve_bh_curve(mat_name, bh_materials)
+            if curve:
+                needed_bh[curve.name] = curve
+                part_to_curve_name[p.name] = curve.name
 
         bh_pro = generate_bh_pro(needed_bh) if needed_bh else "Function{\n}\n"
         bh_pro_path = out_path / "BH.pro"
@@ -114,7 +120,7 @@ class GetDPBackend(SolverBackend):
         commands.append({"method": "generate_design_geo", "args": {"path": str(geo_path)}})
 
         # 4. Design.pro
-        design_pro = self._generate_design_pro(design, design_props, test_props, needed_bh)
+        design_pro = self._generate_design_pro(design, design_props, test_props, needed_bh, part_to_curve_name)
         pro_path = out_path / "model.pro"
         pro_path.write_text(design_pro, encoding="utf-8")
         commands.append({"method": "generate_design_pro", "args": {"path": str(pro_path)}})
@@ -594,6 +600,7 @@ class GetDPBackend(SolverBackend):
         design_props: dict[str, Any],
         test_props: dict[str, Any],
         bh_materials: dict[str, BHCurve],
+        part_to_curve_name: dict[str, str],
     ) -> str:
         """Generate Design.pro — complete GetDP problem definition.
 
@@ -618,7 +625,7 @@ class GetDPBackend(SolverBackend):
 
         self._add_group_section(lines, shape_names, steel_parts, coil_parts, magnet_parts)
         self._add_function_section(lines, design, design_props, test_props, bh_materials,
-                                   steel_parts, coil_parts, magnet_parts, voltage)
+                                   steel_parts, coil_parts, magnet_parts, voltage, part_to_curve_name)
         self._add_constraint_section(lines)
 
         coil_name = coil_parts[0].name if coil_parts else "Coil"
@@ -682,6 +689,7 @@ class GetDPBackend(SolverBackend):
         coil_parts: list[NodeModel],
         magnet_parts: list[NodeModel],
         voltage: float,
+        part_to_curve_name: dict[str, str],
     ) -> None:
         """Function { ... } — mu, nu, js0[], hc, br, TM[]"""
         lines.append("Function {")
@@ -770,12 +778,13 @@ class GetDPBackend(SolverBackend):
 
         # --- Steel nonlinear nu (from B-H data) ---
         for steel in steel_parts:
-            mat_name = steel.properties.get("Material", "")
-            if mat_name and mat_name in bh_materials:
-                lines.append(f"    nu[vol{steel.name}] = nu_{mat_name}[$1];")
-                lines.append(f"    dhdb_NL[vol{steel.name}] = dhdb_{mat_name}[$1];")
+            resolved_name = part_to_curve_name.get(steel.name)
+            if resolved_name:
+                lines.append(f"    nu[vol{steel.name}] = nu_{resolved_name}[$1];")
+                lines.append(f"    dhdb_NL[vol{steel.name}] = dhdb_{resolved_name}[$1];")
                 lines.append("")
             else:
+                mat_name = steel.properties.get("Material", "")
                 lines.append(f"    // Steel: {steel.name} (linearized — no B-H data for '{mat_name}')")
                 lines.append(f"    mu[vol{steel.name}] = 1000 * mu0;")
                 lines.append(f"    nu[vol{steel.name}] = 1.0 / (1000 * mu0);")

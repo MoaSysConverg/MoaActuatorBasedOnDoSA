@@ -106,30 +106,53 @@ def read_aedt_from_instance(m) -> DesignModel:
 
 
 def _extract_design(m, file_path: Path, is_3d: bool) -> DesignModel:
-    """Internal: extract lightweight data from a Maxwell instance.
+    """Internal: extract data from Maxwell and convert to DoSA-compatible format.
 
     Strategy:
-    - Geometry objects → parts (with material-based classification)
-    - Excitation info → merged into Coil parts as Current/Turns properties
-    - Auto-generate DoSA-compatible ForceTest from excitation data
-    - Skip heavy setup/mesh data — keep it portable across solvers
+    - Geometry objects → parts with DoSA-style properties
+      (KindKey, MovingParts, Material, NodeName, ShapePoints)
+    - Excitation info → merged into Coil parts (Current, Turns, CurrentDirection)
+    - Auto-generate DoSA-compatible tests (ForceTest, StrokeTest, CurrentTest)
+    - Skip Region objects (vacuum/air) — DoSA doesn't list them as parts
     """
     parts: list[NodeModel] = []
     tests: list[TestModel] = []
 
-    # --- Extract geometry objects as parts ---
+    # --- Extract geometry objects as DoSA-format parts ---
     try:
         for obj in m.modeler.object_list:
-            props = _extract_object_properties(obj)
             kind = _classify_part(obj)
-            parts.append(NodeModel(kind=kind, name=obj.name, properties=props))
+            if kind == "Region":
+                continue  # DoSA doesn't include Region as a part
+
+            dosa_kind_key = _kind_to_kindkey(kind)
+            mat_name = getattr(obj, "material_name", "vacuum") or "vacuum"
+
+            # Build DoSA-style properties
+            props: dict[str, Any] = {
+                "NodeName": obj.name,
+                "KindKey": dosa_kind_key,
+                "MovingParts": "FIXED",
+                "Material": _maxwell_mat_to_dosa_name(mat_name),
+            }
+
+            # Extract actual vertex geometry → Shape child node
+            shape_child = _extract_shape_node(obj, is_3d)
+            children: list[NodeModel] = []
+            if shape_child is not None:
+                children.append(shape_child)
+
+            parts.append(NodeModel(
+                kind=kind, name=obj.name,
+                properties=props, children=children,
+            ))
     except Exception as e:
         parts.append(NodeModel(
             kind="Error", name="geometry_error",
             properties={"error": str(e)}
         ))
 
-    # --- Extract excitations and merge into coil parts ---
+    # --- Extract excitations and merge into coil parts (DoSA style) ---
     excitation_summary: dict[str, dict] = {}
     try:
         for exc_name in m.excitations:
@@ -141,49 +164,84 @@ def _extract_design(m, file_path: Path, is_3d: bool) -> DesignModel:
                     "type": exc_type,
                     "props": exc_props,
                 }
-
-                # Try to attach excitation data to matching coil part
                 _attach_excitation_to_coil(parts, exc_name, exc_type, exc_props)
     except Exception:
         pass
 
-    # --- Auto-generate DoSA-compatible tests from excitations ---
-    total_current = _compute_total_current(excitation_summary)
-    if total_current > 0:
-        tests.append(TestModel(
-            name="ForceTest_01",
-            kind="ForceTest",
-            properties={
-                "Current": total_current,
-                "Stroke": 0.0,
-            },
-        ))
-        # Also add a basic stroke test
-        tests.append(TestModel(
-            name="StrokeTest_01",
-            kind="StrokeTest",
-            properties={
-                "Current": total_current,
-                "StrokeStart": 0.0,
-                "StrokeEnd": 5.0,
-                "StrokeStep": 1.0,
-            },
-        ))
-    else:
-        # Fallback: create empty force test
-        tests.append(TestModel(
-            name="ForceTest_01",
-            kind="ForceTest",
-            properties={"Current": 1000.0, "Stroke": 0.0},
-        ))
+    # --- Detect MOVING parts from Force boundaries ---
+    try:
+        for bdry_name, bdry in m.boundaries.items():
+            bdry_type = getattr(bdry, "type", "")
+            if "force" in bdry_type.lower():
+                bdry_props = dict(bdry.props) if hasattr(bdry, "props") else {}
+                obj_refs = bdry_props.get("Objects", []) or bdry_props.get("Object", "")
+                if isinstance(obj_refs, str):
+                    obj_refs = [obj_refs]
+                for part in parts:
+                    if part.name in obj_refs:
+                        part.properties["MovingParts"] = "MOVING"
+    except Exception:
+        pass
 
-    # --- Build project info (lightweight) ---
+    # --- Auto-generate DoSA-compatible tests ---
+    total_current = _compute_total_current(excitation_summary)
+    if total_current <= 0:
+        total_current = 1000.0  # fallback
+
+    # Estimate voltage/current from excitation (simplified)
+    coil_current, _ = _get_coil_current_turns(parts)
+    if coil_current <= 0:
+        coil_current = total_current
+
+    tests.append(TestModel(
+        name="force",
+        kind="ForceTest",
+        properties={
+            "NodeName": "force",
+            "KindKey": "FORCE_TEST",
+            "MeshSizePercent": 2,
+            "Voltage": 0.0,
+            "Current": coil_current,
+            "MovingStroke": 0,
+        },
+    ))
+    tests.append(TestModel(
+        name="stroke",
+        kind="StrokeTest",
+        properties={
+            "NodeName": "stroke",
+            "KindKey": "STROKE_TEST",
+            "MeshSizePercent": 2,
+            "Voltage": 0.0,
+            "Current": coil_current,
+            "InitialStroke": 0,
+            "FinalStroke": 5,
+            "StepCount": 5,
+        },
+    ))
+    tests.append(TestModel(
+        name="current",
+        kind="CurrentTest",
+        properties={
+            "NodeName": "current",
+            "KindKey": "CURRENT_TEST",
+            "MeshSizePercent": 2,
+            "InitialCurrent": 0,
+            "FinalCurrent": round(coil_current * 1.5, 5),
+            "StepCount": 5,
+            "MovingStroke": 0,
+        },
+    ))
+
+    # --- Build project info ---
     project_props: dict[str, Any] = {
         "project_name": getattr(m, "project_name", ""),
         "design_name": getattr(m, "design_name", ""),
         "solution_type": getattr(m, "solution_type", ""),
         "design_type": getattr(m, "design_type", ""),
-        "model_units": getattr(m.modeler, "model_units", "mm") if hasattr(m, "modeler") else "mm",
+        "model_units": getattr(
+            m.modeler, "model_units", "mm"
+        ) if hasattr(m, "modeler") else "mm",
         "aedt_version": getattr(m, "aedt_version_id", ""),
     }
 
@@ -193,15 +251,17 @@ def _extract_design(m, file_path: Path, is_3d: bool) -> DesignModel:
         source_type="aedt_3d" if is_3d else "aedt_2d",
         parts=parts,
         tests=tests,
-        nodes=[NodeModel(kind="ProjectInfo", name="AEDT Project", properties=project_props)],
+        nodes=[NodeModel(
+            kind="ProjectInfo", name="AEDT Project",
+            properties=project_props,
+        )],
     )
 
 
 def _attach_excitation_to_coil(
     parts: list[NodeModel], exc_name: str, exc_type: str, exc_props: dict
 ):
-    """Merge excitation data (current, turns) into the matching coil part."""
-    # Extract current value from excitation properties
+    """Merge excitation data into the matching coil part using DoSA keys."""
     current_val = (
         exc_props.get("Current", "")
         or exc_props.get("Value", "")
@@ -209,34 +269,41 @@ def _attach_excitation_to_coil(
     )
     turns = exc_props.get("NumTurns", "") or exc_props.get("Turns", "")
 
-    # Find matching coil part by name similarity
+    # Parse numeric current value
+    current_num = _parse_numeric(str(current_val)) if current_val else 0.0
+    turns_num = int(_parse_numeric(str(turns))) if turns else 0
+
+    # Determine current direction
+    direction = "IN"
+    if current_num < 0:
+        direction = "OUT"
+        current_num = abs(current_num)
+
+    # Find matching coil part by name
+    target = None
     for part in parts:
         if part.kind != "Coil":
             continue
-        # Match by name: excitation often references the object name
         obj_refs = exc_props.get("Objects", []) or exc_props.get("Object", "")
         if isinstance(obj_refs, str):
             obj_refs = [obj_refs]
-
         if part.name in obj_refs or part.name.lower() in exc_name.lower():
-            if current_val:
-                part.properties["Current"] = str(current_val)
-            if turns:
-                part.properties["Turns"] = str(turns)
-            part.properties["ExcitationType"] = exc_type
-            part.properties["ExcitationName"] = exc_name
-            return
+            target = part
+            break
 
-    # If no matching coil found, attach to first coil
-    for part in parts:
-        if part.kind == "Coil":
-            if current_val:
-                part.properties["Current"] = str(current_val)
-            if turns:
-                part.properties["Turns"] = str(turns)
-            part.properties["ExcitationType"] = exc_type
-            part.properties["ExcitationName"] = exc_name
-            return
+    # Fallback to first coil
+    if target is None:
+        for part in parts:
+            if part.kind == "Coil":
+                target = part
+                break
+
+    if target is not None:
+        if current_num > 0:
+            target.properties["Current"] = current_num
+        if turns_num > 0:
+            target.properties["Turns"] = turns_num
+        target.properties["CurrentDirection"] = direction
 
 
 def _compute_total_current(excitation_summary: dict) -> float:
@@ -250,63 +317,183 @@ def _compute_total_current(excitation_summary: dict) -> float:
             or props.get("CurrentValue", "")
             or "0"
         )
-        # Parse numeric value (strip units like "A", "mA")
-        try:
-            numeric = "".join(c for c in current_str if c.isdigit() or c in ".-")
-            if numeric:
-                current = abs(float(numeric))
-                turns = 1
-                turns_str = str(props.get("NumTurns", "1") or "1")
-                try:
-                    turns = int("".join(c for c in turns_str if c.isdigit()) or "1")
-                except ValueError:
-                    turns = 1
-                total += current * turns
-        except (ValueError, TypeError):
-            pass
+        current = _parse_numeric(current_str)
+        turns_str = str(props.get("NumTurns", "1") or "1")
+        turns = max(1, int(_parse_numeric(turns_str) or 1))
+        total += abs(current) * turns
     return total
 
 
-def _extract_object_properties(obj) -> dict[str, Any]:
-    """Extract lightweight properties from a modeler object.
+def _parse_numeric(s: str) -> float:
+    """Extract a numeric value from a string that may contain units."""
+    numeric = "".join(c for c in s if c.isdigit() or c in ".-")
+    try:
+        return float(numeric) if numeric else 0.0
+    except (ValueError, TypeError):
+        return 0.0
 
-    Keeps only what's needed for GUI display and solver re-run:
-    Material, bounding-box derived geometry, solve_inside flag.
+
+def _get_coil_current_turns(parts: list[NodeModel]) -> tuple[float, int]:
+    """Get current and turns from the first coil part."""
+    for part in parts:
+        if part.kind == "Coil":
+            current = float(part.properties.get("Current", 0) or 0)
+            turns = int(part.properties.get("Turns", 1) or 1)
+            return current, turns
+    return 0.0, 1
+
+
+def _kind_to_kindkey(kind: str) -> str:
+    """Convert GUI kind to DoSA KindKey."""
+    mapping = {
+        "Coil": "COIL",
+        "Magnet": "MAGNET",
+        "Steel": "STEEL",
+        "Non-Kind": "NON_KIND",
+        "Other": "NON_KIND",
+    }
+    return mapping.get(kind, "NON_KIND")
+
+
+# Reverse mapping: Maxwell material name → DoSA display name
+_MAXWELL_TO_DOSA_MAT: dict[str, str] = {
+    "copper": "Copper",
+    "aluminum": "Aluminum",
+    "steel_1010": "1010 Steel",
+    "steel_1020": "1020 Steel",
+    "steel_1008": "1008 Steel",
+    "iron": "Pure Iron",
+    "stainless_steel": "430 Stainless Steel",
+    "m19_29g": "M-19",
+    "ndfeb": "NdFeB",
+    "vacuum": "Air",
+}
+
+
+def _maxwell_mat_to_dosa_name(maxwell_name: str) -> str:
+    """Convert Maxwell material name to DoSA-style display name."""
+    key = maxwell_name.lower().strip()
+    if key in _MAXWELL_TO_DOSA_MAT:
+        return _MAXWELL_TO_DOSA_MAT[key]
+    # Return original if no mapping found (capitalize nicely)
+    return maxwell_name.replace("_", " ").title() if maxwell_name else "Air"
+
+
+def _extract_shape_node(obj, is_3d: bool) -> NodeModel | None:
+    """Extract vertex polygon from a modeler object as a DoSA Shape node.
+
+    For 2D: reads obj.vertices directly (XY or RZ polygon).
+    For 3D: projects vertices onto the RZ plane using bounding box.
+    Returns a NodeModel(kind="Shape") with raw_lines containing
+    PointX/PointY pairs, compatible with extract_geometry().
     """
-    props: dict[str, Any] = {}
+    try:
+        verts = obj.vertices
+        if not verts:
+            return _shape_from_bounding_box(obj, is_3d)
 
-    props["Material"] = getattr(obj, "material_name", "vacuum")
-    props["SolveInside"] = getattr(obj, "solve_inside", None)
+        # Collect vertex positions
+        positions = []
+        for v in verts:
+            pos = v.position if hasattr(v, "position") else v
+            if isinstance(pos, (list, tuple)) and len(pos) >= 2:
+                positions.append(pos)
 
-    # Bounding box → derive rectangular ShapePoints for 2D cross-section display
+        if len(positions) < 3:
+            return _shape_from_bounding_box(obj, is_3d)
+
+        # 2D Maxwell uses ZX plane: position = (R, 0, Z)
+        # 3D Maxwell: project to RZ plane
+        # In both cases, use (x, z) as the 2D cross-section
+        pts = [(p[0], p[2]) for p in positions
+               if len(p) >= 3]
+        if not pts:
+            pts = [(p[0], p[1]) for p in positions]
+
+        # Remove duplicates while preserving order
+        seen = set()
+        unique_pts = []
+        for p in pts:
+            key = (round(p[0], 6), round(p[1], 6))
+            if key not in seen:
+                seen.add(key)
+                unique_pts.append(p)
+        pts = unique_pts
+
+        if len(pts) < 3:
+            return _shape_from_bounding_box(obj, is_3d)
+
+        # Build raw_lines in DoSA format
+        raw_lines = [
+            f"BasePointX={pts[0][0]}",
+            f"BasePointY={pts[0][1]}",
+            "FaceType=POLYGON",
+        ]
+        for x, y in pts:
+            raw_lines.append(f"PointX={x}")
+            raw_lines.append(f"PointY={y}")
+
+        return NodeModel(
+            kind="Shape", name="Shape",
+            properties={
+                "BasePointX": pts[0][0],
+                "BasePointY": pts[0][1],
+                "FaceType": "POLYGON",
+            },
+            raw_lines=raw_lines,
+        )
+    except Exception:
+        return _shape_from_bounding_box(obj, is_3d)
+
+
+def _shape_from_bounding_box(obj, is_3d: bool) -> NodeModel | None:
+    """Fallback: create Shape node from bounding box."""
     try:
         bb = obj.bounding_box
-        if bb and len(bb) >= 6:
-            # 3D bounding box: [xmin, ymin, zmin, xmax, ymax, zmax]
-            # For 2D axisymmetric (RZ): R=x, Z=z
-            xmin, ymin, zmin, xmax, ymax, zmax = bb[:6]
-            props["BoundingBox"] = bb
-            # Store as ShapePoints for geometry panel (RZ cross-section)
-            props["ShapePoints"] = [
-                {"x": xmin, "y": zmin},
-                {"x": xmax, "y": zmin},
-                {"x": xmax, "y": zmax},
-                {"x": xmin, "y": zmax},
-            ]
-        elif bb and len(bb) >= 4:
-            # 2D bounding box: [xmin, ymin, xmax, ymax]
+        if not bb:
+            return None
+        # Always use X and Z for cross-section (2D ZX plane)
+        if len(bb) >= 6:
+            xmin, _, zmin, xmax, _, zmax = bb[:6]
+            pts = [(xmin, zmin), (xmax, zmin),
+                   (xmax, zmax), (xmin, zmax)]
+        elif len(bb) >= 4:
             xmin, ymin, xmax, ymax = bb[:4]
-            props["BoundingBox"] = bb
-            props["ShapePoints"] = [
-                {"x": xmin, "y": ymin},
-                {"x": xmax, "y": ymin},
-                {"x": xmax, "y": ymax},
-                {"x": xmin, "y": ymax},
-            ]
-    except Exception:
-        pass
+            pts = [(xmin, ymin), (xmax, ymin),
+                   (xmax, ymax), (xmin, ymax)]
+        else:
+            return None
 
-    return props
+        raw_lines = [
+            f"BasePointX={pts[0][0]}",
+            f"BasePointY={pts[0][1]}",
+            "FaceType=POLYGON",
+        ]
+        for x, y in pts:
+            raw_lines.append(f"PointX={x}")
+            raw_lines.append(f"PointY={y}")
+
+        return NodeModel(
+            kind="Shape", name="Shape",
+            properties={
+                "BasePointX": pts[0][0],
+                "BasePointY": pts[0][1],
+                "FaceType": "POLYGON",
+            },
+            raw_lines=raw_lines,
+        )
+    except Exception:
+        return None
+
+
+def _order_polygon(pts: list[tuple[float, float]]) -> list[tuple[float, float]]:
+    """Order 2D points into a proper polygon by angle from centroid."""
+    import math
+    if len(pts) <= 3:
+        return pts
+    cx = sum(p[0] for p in pts) / len(pts)
+    cy = sum(p[1] for p in pts) / len(pts)
+    return sorted(pts, key=lambda p: math.atan2(p[1] - cy, p[0] - cx))
 
 
 def _classify_part(obj) -> str:

@@ -70,7 +70,9 @@ class GeometryViewPanel(QWidget):
         if design.parts:
             self._ax.axvline(x=0, color="black", linestyle="--", linewidth=0.8, alpha=0.5)
 
-        self._ax.legend(fontsize=8, loc="upper right")
+        handles, _ = self._ax.get_legend_handles_labels()
+        if handles:
+            self._ax.legend(fontsize=8, loc="upper right")
         self._figure.tight_layout()
         self._canvas.draw()
 

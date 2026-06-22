@@ -25,6 +25,7 @@ all = ["pyaedt>=0.9", "pyfemm", "PyQt6>=6.4", "matplotlib"]
 
 [project.scripts]
 moa-actuator = "moa_actuator.cli:main"
+moa-actuator-gui = "moa_actuator.gui_entry:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["moa_actuator"]

@@ -102,10 +102,23 @@ def _find_shape_child(node: NodeModel) -> NodeModel | None:
 
 
 def _parse_points_from_shape(shape_node: NodeModel) -> list[Point2D]:
-    """Parse point pairs from Shape block raw_lines (PointX/PointY pairs)."""
+    """Parse point pairs from Shape block raw_lines (PointX/PointY pairs, or X{i}/Y{i} keys)."""
     points: list[Point2D] = []
-    current_x: float | None = None
 
+    # 1. Try parsing from properties (X0, Y0, X1, Y1 format)
+    props = shape_node.properties
+    i = 0
+    while f"X{i}" in props and f"Y{i}" in props:
+        try:
+            points.append(Point2D(float(props[f"X{i}"]), float(props[f"Y{i}"])))
+        except ValueError:
+            pass
+        i += 1
+    if points:
+        return points
+
+    # 2. Try parsing from raw_lines (PointX=, PointY= format)
+    current_x: float | None = None
     for line in shape_node.raw_lines:
         stripped = line.strip()
         if "=" not in stripped:
@@ -115,10 +128,16 @@ def _parse_points_from_shape(shape_node: NodeModel) -> list[Point2D]:
         value = value.strip()
 
         if key == "PointX":
-            current_x = float(value)
+            try:
+                current_x = float(value)
+            except ValueError:
+                pass
         elif key == "PointY":
             if current_x is not None:
-                points.append(Point2D(current_x, float(value)))
+                try:
+                    points.append(Point2D(current_x, float(value)))
+                except ValueError:
+                    pass
                 current_x = None
 
     return points

@@ -28,6 +28,7 @@ class RunConfig:
     aedt_version: str = "2026.1"
     non_graphical: bool = True
     new_desktop: bool = True  # False = attach to running AEDT session
+    build_only: bool = False
     # Overrides from GUI (if set, these take precedence over profile defaults)
     solution_type: str = ""
     time_step: str = ""
@@ -91,6 +92,7 @@ def run(config: RunConfig) -> SolveResult:
         mode=config.mode,
         out_dir=config.out_dir,
         dry_run=config.dry_run,
+        build_only=config.build_only,
         stop_time=stop_time,
         time_step=time_step,
     )
