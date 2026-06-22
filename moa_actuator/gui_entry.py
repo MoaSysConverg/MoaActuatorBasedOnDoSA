@@ -61,7 +61,7 @@ def main() -> int:
         tb_str = traceback.format_exc()
         try:
             with open("moa_actuator_gui_error.log", "w", encoding="utf-8") as f:
-                f.write(tb_str)
+                f.write("\n".join(log_lines) + "\n\nTraceback:\n" + tb_str)
         except Exception:
             pass
         root = tk.Tk()

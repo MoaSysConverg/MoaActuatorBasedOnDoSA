@@ -26,12 +26,6 @@ New-Item -ItemType Directory -Path $OutputDir | Out-Null
 
 Write-Host "[3/5] Copy executable bundle"
 Copy-Item -Recurse -Force "$DistDir/*" $OutputDir
-if (Test-Path "$OutputDir/_internal/PyQt6/Qt6/bin") {
-    Write-Host "Copying PyQt6 binaries to executable root, _internal root, and PyQt6 folders to prevent Windows DLL search path conflicts"
-    Copy-Item -Force "$OutputDir/_internal/PyQt6/Qt6/bin/*" "$OutputDir/"
-    Copy-Item -Force "$OutputDir/_internal/PyQt6/Qt6/bin/*" "$OutputDir/_internal/"
-    Copy-Item -Force "$OutputDir/_internal/PyQt6/Qt6/bin/*" "$OutputDir/_internal/PyQt6/"
-}
 
 Write-Host "[4/5] Copy required runtime data"
 New-Item -ItemType Directory -Path "$OutputDir/config" | Out-Null
