@@ -5,10 +5,10 @@ the DoSA-Maxwell automation workflow.
 
 ## Referenced PDFs
 
-- E:/KDH/gitDosa_Actuator/DoSA-2D/MAXW_Actuator_2020R1_EN_WS01.pdf
-- E:/KDH/gitDosa_Actuator/DoSA-2D/MAXW_Actuator_2020R1_EN_LE01.pdf
-- E:/KDH/gitDosa_Actuator/DoSA-2D/coupling_solenoid_1114_2014.pdf
-- E:/KDH/gitDosa_Actuator/DoSA-2D/TPC_Solenoid_1210_2014.pdf
+- refDoc/MAXW_Actuator_2020R1_EN_WS01.pdf
+- refDoc/MAXW_Actuator_2020R1_EN_LE01.pdf
+- refDoc/coupling_solenoid_1114_2014.pdf
+- refDoc/TPC_Solenoid_1210_2014.pdf
 
 ## 2014 PDF Summaries
 

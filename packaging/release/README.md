@@ -16,7 +16,7 @@ PowerShell 예시:
 
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
 & c:\Users\user\.ansys_python_venvs\pyMotorEnv_310\Scripts\Activate.ps1
-cd E:\KDH\gitDosa_Actuator\MoaActuatorBasedOnDoSA
+cd [프로젝트_루트_경로]
 python -m PyInstaller --noconfirm --clean packaging/pyinstaller/moa_actuator_gui.spec
 powershell -ExecutionPolicy Bypass -File packaging/release/assemble_release.ps1
 

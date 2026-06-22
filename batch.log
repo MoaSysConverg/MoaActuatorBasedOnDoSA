@@ -660,3 +660,70 @@ Project directory: C:\Users\user\Documents\Ansoft
           [info] Parametric Analysis is done. (10:41:54 AM  Jun 22, 2026)
 -- Message Window --
 Stopping Batch Run: 11:22:44 AM  Jun 22, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 5:56:00 PM  Jun 22, 2026
+Running as user : DESKTOP-513NQ4P\moa
+Temp directory: C:\Users\moa\AppData\Local\Temp
+Project directory: C:\Users\moa\Documents\Ansoft
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 6:04:45 PM  Jun 22, 2026
+Running as user : DESKTOP-513NQ4P\moa
+Temp directory: C:\Users\moa\AppData\Local\Temp
+Project directory: C:\Users\moa\Documents\Ansoft
+[info] GRPC server running on port: 50051.
+
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name coil is already used, use name coil_1. (06:04:57 PM  Jun 22, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), DoSA_Project: Solutions have been invalidated. Undo to recover. (06:04:57 PM  Jun 22, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name plunger is already used, use name plunger_1. (06:04:57 PM  Jun 22, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name core is already used, use name core_1. (06:04:57 PM  Jun 22, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name case is already used, use name case_1. (06:04:57 PM  Jun 22, 2026)
+[error] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Script macro error: force: 'Force_plunger' is a duplicated parameter name. (06:04:57 PM  Jun 22, 2026)
+[error] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Script macro error: Duplicate excitation name: 'Current_coil' (06:04:57 PM  Jun 22, 2026)
+[error] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Script macro error: The name 'ParametricSetup1' is already in use. (06:04:58 PM  Jun 22, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Report Name 'Force Plot 1' is already in use or invalid. Creating report with name 'Force Plot 2'. (06:04:58 PM  Jun 22, 2026)
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 6:07:36 PM  Jun 22, 2026
+Running as user : DESKTOP-513NQ4P\moa
+Temp directory: C:\Users\moa\AppData\Local\Temp
+Project directory: C:\Users\moa\Documents\Ansoft
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] I/O error in reading design
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] I/O error in reading design
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 6:10:47 PM  Jun 22, 2026
+Running as user : DESKTOP-513NQ4P\moa
+Temp directory: C:\Users\moa\AppData\Local\Temp
+Project directory: C:\Users\moa\Documents\Ansoft
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: C:\Program Files\ANSYS Inc\v252\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 6:13:38 PM  Jun 22, 2026
+Running as user : DESKTOP-513NQ4P\moa
+Temp directory: C:\Users\moa\AppData\Local\Temp
+Project directory: C:\Users\moa\Documents\Ansoft

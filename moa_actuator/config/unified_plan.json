@@ -4,10 +4,10 @@
   "sources": {
     "dosa_2d": "Code/11_DoSA-2D/DoSA-2D",
     "dosa_3d": "../DoSA-3D/Code/01_DoSA-3D/DoSA-3D",
-    "pdf_ws01": "E:/KDH/gitDosa_Actuator/DoSA-2D/MAXW_Actuator_2020R1_EN_WS01.pdf",
-    "pdf_le01": "E:/KDH/gitDosa_Actuator/DoSA-2D/MAXW_Actuator_2020R1_EN_LE01.pdf",
-    "pdf_coupling_2014": "E:/KDH/gitDosa_Actuator/DoSA-2D/coupling_solenoid_1114_2014.pdf",
-    "pdf_tpc_2014": "E:/KDH/gitDosa_Actuator/DoSA-2D/TPC_Solenoid_1210_2014.pdf"
+    "pdf_ws01": "refDoc/MAXW_Actuator_2020R1_EN_WS01.pdf",
+    "pdf_le01": "refDoc/MAXW_Actuator_2020R1_EN_LE01.pdf",
+    "pdf_coupling_2014": "refDoc/coupling_solenoid_1114_2014.pdf",
+    "pdf_tpc_2014": "refDoc/TPC_Solenoid_1210_2014.pdf"
   },
   "profiles": [
     {
