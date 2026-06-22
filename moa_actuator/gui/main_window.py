@@ -34,6 +34,7 @@ from .dialogs.add_part import AddPartDialog
 from .dialogs.add_test import AddTestDialog
 from .panels.design_tree import DesignTreePanel
 from .panels.geometry_view import GeometryViewPanel
+from .panels.material_view import MaterialViewPanel
 from .panels.property_editor import PropertyEditorPanel
 from .panels.result_panel import ResultPanel
 from .panels.solver_panel import SolverPanel
@@ -89,6 +90,7 @@ class MainWindow(QMainWindow):
 
         file_menu.addSeparator()
         file_menu.addAction("Import &DXF...").triggered.connect(self._import_dxf)
+        file_menu.addAction("&Manage Materials...").triggered.connect(self._manage_materials)
         file_menu.addSeparator()
 
         act = file_menu.addAction("E&xit")
@@ -100,6 +102,7 @@ class MainWindow(QMainWindow):
         part_menu.addAction("Add &Coil...").triggered.connect(lambda: self._add_part("Coil"))
         part_menu.addAction("Add &Magnet...").triggered.connect(lambda: self._add_part("Magnet"))
         part_menu.addAction("Add &Steel...").triggered.connect(lambda: self._add_part("Steel"))
+        part_menu.addAction("Edit Selected Part &Geometry...").triggered.connect(self._edit_selected_part_geometry)
         part_menu.addSeparator()
 
         act = part_menu.addAction("&Delete Selected Part")
@@ -145,6 +148,7 @@ class MainWindow(QMainWindow):
         toolbar.addAction("+ Coil", lambda: self._add_part("Coil"))
         toolbar.addAction("+ Magnet", lambda: self._add_part("Magnet"))
         toolbar.addAction("+ Steel", lambda: self._add_part("Steel"))
+        toolbar.addAction("Edit Geom", self._edit_selected_part_geometry)
         toolbar.addSeparator()
         toolbar.addAction("+ Force", lambda: self._add_test("ForceTest"))
         toolbar.addAction("+ Stroke", lambda: self._add_test("StrokeTest"))
@@ -178,6 +182,9 @@ class MainWindow(QMainWindow):
         self._property_panel.property_changed.connect(self._on_property_changed)
         left_layout.addWidget(self._property_panel, stretch=1)
 
+        self._material_panel = MaterialViewPanel()
+        left_layout.addWidget(self._material_panel, stretch=1)
+
         h_splitter.addWidget(left_widget)
 
         # --- Center: Geometry viewer + Solver panel ---
@@ -194,6 +201,7 @@ class MainWindow(QMainWindow):
 
         # --- Right: Results ---
         self._result_panel = ResultPanel()
+        self._result_panel.set_solver_panel(self._solver_panel)
         h_splitter.addWidget(self._result_panel)
 
         h_splitter.setSizes([300, 500, 450])
@@ -348,6 +356,16 @@ class MainWindow(QMainWindow):
             "For now, use the Part dialogs to define geometry."
         )
 
+    def _manage_materials(self):
+        from .dialogs.material_manager import MaterialManagerDialog
+        dialog = MaterialManagerDialog(parent=self)
+        if dialog.exec():
+            # Reset cache in material panel
+            self._material_panel._bh_cache = None
+            # Replot if currently displaying a material
+            if hasattr(self._material_panel, "_current_material") and self._material_panel._current_material:
+                self._material_panel.show_material(self._material_panel._current_material)
+
     # ==================================================================
     # Part operations
     # ==================================================================
@@ -380,6 +398,33 @@ class MainWindow(QMainWindow):
             self._refresh_all()
             self._log_message(f"Deleted part: {selected}")
 
+    def _edit_selected_part_geometry(self):
+        if self._design is None:
+            return
+        selected = self._tree_panel.get_selected_part_name()
+        if not selected:
+            QMessageBox.information(self, "Edit Geometry", "Select a part in the design tree first.")
+            return
+
+        part = None
+        for p in self._design.parts:
+            if p.name == selected:
+                part = p
+                break
+        if not part:
+            return
+
+        from .dialogs.edit_geometry import EditGeometryDialog
+
+        def notify_changed():
+            self._modified = True
+            self._geometry_panel.load_design(self._design)
+            self._property_panel.load_part(part)
+            self._update_title()
+
+        dialog = EditGeometryDialog(part, on_changed_callback=notify_changed, parent=self)
+        dialog.exec()
+
     # ==================================================================
     # Test operations
     # ==================================================================
@@ -405,6 +450,7 @@ class MainWindow(QMainWindow):
             return
         config = self._solver_panel.get_run_config()
         config.design = self._design
+        self._result_panel.set_config(config)
         self._result_panel.run_simulation(config)
         self._log_message(f"Running {config.solver} ({config.mode})...")
 
@@ -425,6 +471,9 @@ class MainWindow(QMainWindow):
         for part in self._design.parts:
             if part.name == part_name:
                 self._property_panel.load_part(part)
+                mat = part.properties.get("Material", "")
+                if mat:
+                    self._material_panel.show_material(mat)
                 break
 
     def _on_test_selected(self, test_name: str):
@@ -451,6 +500,11 @@ class MainWindow(QMainWindow):
             self._solver_panel.set_mode(
                 "3d" if self._design.source_type == "dsa3d" else "2d"
             )
+            # Pre-set config for Build/Solve buttons
+            config = self._solver_panel.get_run_config()
+            config.design = self._design
+            self._result_panel.set_config(config)
+
             self._statusbar.showMessage(
                 f"{self._design.name} — {len(self._design.parts)} parts, "
                 f"{len(self._design.tests)} tests"

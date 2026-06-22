@@ -121,6 +121,57 @@ def _parse_material_body(name: str, body: str) -> BHCurve:
     return curve
 
 
+def resolve_bh_curve(material_name: str, bh_curves: dict[str, BHCurve]) -> BHCurve | None:
+    """Resolve a design material name to a BHCurve from the parsed dmat file."""
+    if not bh_curves or not material_name:
+        return None
+
+    # 1. Try direct match
+    name_clean = material_name.strip()
+    if name_clean in bh_curves:
+        return bh_curves[name_clean]
+
+    # 2. Try normalized match (lowercase, spaces/hyphens to underscores)
+    def normalize_name(n: str) -> str:
+        return n.lower().replace(" ", "_").replace("-", "_")
+
+    norm_target = normalize_name(name_clean)
+    for name, curve in bh_curves.items():
+        if normalize_name(name) == norm_target:
+            return curve
+
+    # 3. Try synonym mapping for Japanese/JIS equivalents or common steel designations
+    synonyms = {
+        "430_stainless_steel": "sus_430",
+        "430stainlesssteel": "sus_430",
+        "sus_430": "sus_430",
+        "sus430": "sus_430",
+        "416_stainless_steel": "sus_416",
+        "416stainlesssteel": "sus_416",
+        "sus_416": "sus_416",
+        "sus416": "sus_416",
+        "455_stainless_steel": "sus_455",
+        "455stainlesssteel": "sus_455",
+        "sus_455": "sus_455",
+        "sus455": "sus_455",
+    }
+    
+    norm_no_underscore = norm_target.replace("_", "")
+    mapped_target = synonyms.get(norm_target) or synonyms.get(norm_no_underscore)
+    if mapped_target:
+        for name, curve in bh_curves.items():
+            if normalize_name(name) == mapped_target:
+                return curve
+
+    # 4. Partial fallback match (e.g., if target is a substring or vice versa)
+    for name, curve in bh_curves.items():
+        name_norm = normalize_name(name)
+        if norm_target in name_norm or name_norm in norm_target:
+            return curve
+
+    return None
+
+
 def generate_bh_pro(materials: dict[str, BHCurve]) -> str:
     """Generate GetDP BH.pro content with B-H interpolation functions.
 
@@ -159,3 +210,35 @@ def generate_bh_pro(materials: dict[str, BHCurve]) -> str:
 
     lines.append("}")
     return "\n".join(lines)
+
+
+def write_dmat_file(file_path: str | Path | None = None, materials: dict[str, BHCurve] = None) -> None:
+    """Write B-H curves to a DoSA .dmat material file."""
+    if file_path is None:
+        file_path = _find_dmat_file()
+        if file_path is None:
+            raise FileNotFoundError("Could not find DoSA_MS.dmat bundled file path.")
+
+    if materials is None:
+        materials = {}
+
+    lines = []
+    for name, curve in materials.items():
+        lines.append("$begin 'MaterialDef'")
+        lines.append(f"\t$begin '{name}'")
+        lines.append("\t\t$begin 'BHCoordinates'")
+        for h, b in zip(curve.H, curve.B):
+            lines.append("\t\t\t$begin 'Coordinate'")
+            h_str = str(int(h)) if h.is_integer() else str(h)
+            b_str = str(int(b)) if b.is_integer() else str(b)
+            lines.append(f"\t\t\t\tX={h_str}")
+            lines.append(f"\t\t\t\tY={b_str}")
+            lines.append("\t\t\t$end 'Coordinate'")
+        lines.append("\t\t$end 'BHCoordinates'")
+        cond_str = str(int(curve.conductivity)) if curve.conductivity.is_integer() else str(curve.conductivity)
+        lines.append(f"\t\tconductivity={cond_str}")
+        lines.append(f"\t$end '{name}'")
+        lines.append("$end 'MaterialDef'")
+        lines.append("")
+
+    Path(file_path).write_text("\n".join(lines), encoding="utf-8")

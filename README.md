@@ -2,6 +2,12 @@
 
 DoSA-2D, DoSA-3D 및 PyAEDT Actuator 자동화 코드를 통합한 액추에이터 설계/해석 툴킷입니다.
 
+## 문서
+
+- Maxwell 2D 연동 튜토리얼 (Solenoid): [Doc/Maxwell2D_Solenoid_Tutorial.md](Doc/Maxwell2D_Solenoid_Tutorial.md)
+- EXE 사용자 Quick Start (Windows): [Doc/EXE_Quick_Start.md](Doc/EXE_Quick_Start.md)
+- EXE 빌드/패키징 가이드: [packaging/release/README.md](packaging/release/README.md)
+
 ## 구조
 
 ```

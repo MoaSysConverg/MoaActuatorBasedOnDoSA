@@ -288,3 +288,375 @@ Temp directory: C:\Users\user\AppData\Local\Temp
 Project directory: C:\Users\user\Documents\Ansoft
 [info] gRPC server started on port 56267 of local host. Only connections from the local host initiated by the same user are permitted.
 
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 7:02:07 PM  Jun 18, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project2.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project3.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project4.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project2.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project3.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project4.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [info] gRPC server started on port 56308 of local host. Only connections from the local host initiated by the same user are permitted. 
+        [info] The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+Stopping Batch Run: 7:27:40 PM  Jun 18, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 7:29:51 PM  Jun 18, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project2.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project3.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project4.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+[error] Project "DoSA_Project" cannot be closed/deleted because it is in use by another application.
+The project 'Project6' has been edited and/or solved. Do you want to save the changes?
+The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [info] The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+      HSV_V1_23R1 (E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/)
+        [info] Project (Materials) SS430 was not found in its original location([personal] add_adef), it won't be listed in the Update Definitions dialog (07:50:25 PM  Jun 18, 2026)
+        [info] Project (Materials) Cold Rolled Steel was not found in its original location([personal] add_adef), it won't be listed in the Update Definitions dialog (07:50:25 PM  Jun 18, 2026)
+        [info] Project (Materials) copper was not found in its original location([personal] add_adef), it won't be listed in the Update Definitions dialog (07:50:26 PM  Jun 18, 2026)
+-- Message Window --
+Stopping Batch Run: 12:59:20 AM  Jun 19, 2026
+ted by the same user are permitted.
+
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (12:58:11 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its loc[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (01:01:05 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (01:01:05 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (01:01:05 AM  Jun 19, 2026)[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), 'Solve inside' for object 'coil' is set, due to material assignment change. (01:01:56 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), 'Solve inside' for object 'plunger' is set, due to material assignment change. (01:01:56 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), 'Solve inside' for object 'core' is set, due to material assignment change. (01:01:56 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), 'Solve inside' for object 'case' is set, due to material assignment change. (01:01:56 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), The variable  'Amp_1' doesn't have an associated sweep and is excluded from the definition of trace. (01:01:59 AM  Jun 19, 2026)
+[error] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Script macro error: No trace data for quantity: Force.Force_z (01:01:59 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), The variable  'Amp_1' doesn't have an associated sweep and is excluded from the definition of trace. (01:01:59 AM  Jun 19, 2026)
+[error] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Script macro error: No trace data for quantity: Force.Force_z (01:01:59 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), The variable  'Amp_1' doesn't have an associated sweep and is excluded from the definition of trace. (01:10:52 AM  Jun 19, 2026)
+[error] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Script macro error: No trace data for quantity: Force.Force_z (01:10:52 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), The variable  'Amp_1' doesn't have an associated sweep and is excluded from the definition of trace. (01:10:52 AM  Jun 19, 2026)
+[error] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Script macro error: No trace data for quantity: Force.Force_z (01:10:52 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name coil is already used, use name coil_1. (01:10:57 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name plunger is already used, use name plunger_1. (01:10:57 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name core is already used, use name core_1. (01:10:57 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name case is already used, use name case_1. (01:10:57 AM  Jun 19, 2026)
+[error] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Script macro error: force: 'Force_plunger' is a duplicated parameter name. (01:10:58 AM  Jun 19, 2026)
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 1:11:23 AM  Jun 19, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 58441 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/outputp/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (01:16:41 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/outputp/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (01:16:41 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/outputp/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (01:16:41 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/outputp/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (01:16:41 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name coil is already used, use name coil_1. (01:16:43 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name plunger is already used, use name plunger_1. (01:16:43 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name core is already used, use name core_1. (01:16:43 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name case is already used, use name case_1. (01:16:43 AM  Jun 19, 2026)
+[error] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Script macro error: force: 'Force_plunger' is a duplicated parameter name. (01:16:43 AM  Jun 19, 2026)
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 1:23:46 AM  Jun 19, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 58984 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), 'Solve inside' for object 'coil' is set, due to material assignment change. (01:25:07 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), 'Solve inside' for object 'plunger' is set, due to material assignment change. (01:25:08 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), 'Solve inside' for object 'core' is set, due to material assignment change. (01:25:08 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), 'Solve inside' for object 'case' is set, due to material assignment change. (01:25:08 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), The variable  'Amp_1' doesn't have an associated sweep and is excluded from the definition of trace. (01:25:10 AM  Jun 19, 2026)
+[error] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Script macro error: No trace data for quantity: Force.Force_z (01:25:10 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), The variable  'Amp_1' doesn't have an associated sweep and is excluded from the definition of trace. (01:25:11 AM  Jun 19, 2026)
+[error] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Script macro error: No trace data for quantity: Force.Force_z (01:25:11 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name coil is already used, use name coil_1. (01:26:11 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name plunger is already used, use name plunger_1. (01:26:11 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name core is already used, use name core_1. (01:26:11 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Part Attributes: Name case is already used, use name case_1. (01:26:11 AM  Jun 19, 2026)
+[error] Project:DoSA_Project, Design:DoSA_Project (Magnetostatic, about Z), Script macro error: force: 'Force_plunger' is a duplicated parameter name. (01:26:12 AM  Jun 19, 2026)
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 1:26:23 AM  Jun 19, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 59088 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (01:31:42 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (01:31:42 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (01:31:42 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (01:31:42 AM  Jun 19, 2026)
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 9:53:45 AM  Jun 19, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 55517 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (09:59:03 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (09:59:03 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (09:59:03 AM  Jun 19, 2026)
+[warning] Project:DoSA_Project, Failed to obtain access to 'DoSA_Project.asol_priv' because another application did not release its lock.
+It may be necessary to delete the file 'E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/DoSA_Project.aedtresults/.DoSA_Project.asol_priv.semaphore' or terminate the offending application. (09:59:03 AM  Jun 19, 2026)
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 9:59:42 AM  Jun 19, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+[warning] I/O error in reading design
+-- Message Window --
+      *Global - Messages
+        [info] gRPC server started on port 55774 of local host. Only connections from the local host initiated by the same user are permitted. 
+        [warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+        [warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+        [warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+        [warning] The file DoSA_Project.asol_priv is in use - do you want to wait?
+        [warning] I/O error in reading design
+-- Message Window --
+Stopping Batch Run: 10:02:17 AM  Jun 19, 2026
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:02:41 AM  Jun 19, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[error] Project "DoSA_Project" cannot be closed/deleted because it is in use by another application.
+[error] Project "DoSA_Project" cannot be closed/deleted because it is in use by another application.
+The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [info] The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+        [info] The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+er\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 51635 of local host. Only connections from the local host initiated by the same user are permitted.
+
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 5:07:44 PM  Jun 19, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+The project 'DoSA_Project' has been edited and/or solved. Do you want to save the changes?
+[warning] If you continue, all running simulations and those waiting in the queue will be aborted.
+Do you want to continue?
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] If you continue, all running simulations and those waiting in the queue will be aborted.
+Do you want to continue?
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:29:27 AM  Jun 22, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+[info] gRPC server started on port 61203 of local host. Only connections from the local host initiated by the same user are permitted.
+
+ 
+Ansys Electronics Desktop Version 2026.1.0, Build: 2026-02-02 02:17:35
+Location: C:\Program Files\ANSYS Inc\v261\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:30:42 AM  Jun 22, 2026
+Running as user : 2020-2-WORK-B\user
+Temp directory: C:\Users\user\AppData\Local\Temp
+Project directory: C:\Users\user\Documents\Ansoft
+-- Message Window --
+      *Global - Messages
+        [info] gRPC server started on port 61314 of local host. Only connections from the local host initiated by the same user are permitted. 
+      DoSA_Project_1 (E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/)
+        DoSA_Project_1 (Magnetostatic, about Z)
+          [warning] 'Solve inside' for object 'coil' is set, due to material assignment change. (10:32:14 AM  Jun 22, 2026)
+          [warning] 'Solve inside' for object 'plunger' is set, due to material assignment change. (10:32:14 AM  Jun 22, 2026)
+          [warning] 'Solve inside' for object 'core' is set, due to material assignment change. (10:32:14 AM  Jun 22, 2026)
+          [warning] 'Solve inside' for object 'case' is set, due to material assignment change. (10:32:14 AM  Jun 22, 2026)
+          [error] Script macro error: No trace data for quantity: Force_plunger.Force_z (10:32:27 AM  Jun 22, 2026)
+      DoSA_Project_2 (E:/KDH/gitDosa_Actuator/MoaActuatorBasedOnDoSA/output/)
+        DoSA_Project_2 (Magnetostatic, about Z)
+          [warning] 'Solve inside' for object 'coil' is set, due to material assignment change. (10:38:59 AM  Jun 22, 2026)
+          [warning] 'Solve inside' for object 'plunger' is set, due to material assignment change. (10:38:59 AM  Jun 22, 2026)
+          [warning] 'Solve inside' for object 'core' is set, due to material assignment change. (10:38:59 AM  Jun 22, 2026)
+          [warning] 'Solve inside' for object 'case' is set, due to material assignment change. (10:39:00 AM  Jun 22, 2026)
+          [info] Parametric Analysis on ParametricSetup1 has been started. (10:39:12 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='247.9A' move='0mm') has been requested using the following machines: Local Machine. (10:39:13 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:40:33 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:40:34 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='247.9A' move='0.2mm') has been requested using the following machines: Local Machine. (10:40:34 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:40:35 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:40:36 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='247.9A' move='0.4mm') has been requested using the following machines: Local Machine. (10:40:37 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:40:37 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:40:38 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='247.9A' move='0.6mm') has been requested using the following machines: Local Machine. (10:40:39 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:40:40 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:40:40 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='247.9A' move='0.8mm') has been requested using the following machines: Local Machine. (10:40:41 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:40:42 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:40:43 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='247.9A' move='1mm') has been requested using the following machines: Local Machine. (10:40:43 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:40:45 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:40:46 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='495.8A' move='0mm') has been requested using the following machines: Local Machine. (10:40:47 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:40:48 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:40:49 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='495.8A' move='0.2mm') has been requested using the following machines: Local Machine. (10:40:49 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:40:50 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:40:51 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='495.8A' move='0.4mm') has been requested using the following machines: Local Machine. (10:40:51 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:40:53 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:40:54 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='495.8A' move='0.6mm') has been requested using the following machines: Local Machine. (10:40:55 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:40:56 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:40:57 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='495.8A' move='0.8mm') has been requested using the following machines: Local Machine. (10:40:57 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:40:58 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:40:59 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='495.8A' move='1mm') has been requested using the following machines: Local Machine. (10:40:59 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:01 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:02 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='743.7A' move='0mm') has been requested using the following machines: Local Machine. (10:41:03 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:04 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:05 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='743.7A' move='0.2mm') has been requested using the following machines: Local Machine. (10:41:05 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:06 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:07 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='743.7A' move='0.4mm') has been requested using the following machines: Local Machine. (10:41:08 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:10 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:11 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='743.7A' move='0.6mm') has been requested using the following machines: Local Machine. (10:41:11 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:12 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:13 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='743.7A' move='0.8mm') has been requested using the following machines: Local Machine. (10:41:14 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:14 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:15 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='743.7A' move='1mm') has been requested using the following machines: Local Machine. (10:41:16 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:18 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:19 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='991.6A' move='0mm') has been requested using the following machines: Local Machine. (10:41:19 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:20 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:21 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='991.6A' move='0.2mm') has been requested using the following machines: Local Machine. (10:41:22 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:24 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:25 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='991.6A' move='0.4mm') has been requested using the following machines: Local Machine. (10:41:25 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:26 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:27 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='991.6A' move='0.6mm') has been requested using the following machines: Local Machine. (10:41:28 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:29 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:30 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='991.6A' move='0.8mm') has been requested using the following machines: Local Machine. (10:41:30 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:32 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:33 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='991.6A' move='1mm') has been requested using the following machines: Local Machine. (10:41:34 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:34 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:35 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='1239.4A' move='0mm') has been requested using the following machines: Local Machine. (10:41:36 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:37 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:38 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='1239.4A' move='0.2mm') has been requested using the following machines: Local Machine. (10:41:39 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:40 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:41 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='1239.4A' move='0.4mm') has been requested using the following machines: Local Machine. (10:41:42 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:43 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:44 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='1239.4A' move='0.6mm') has been requested using the following machines: Local Machine. (10:41:44 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:46 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:47 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='1239.4A' move='0.8mm') has been requested using the following machines: Local Machine. (10:41:48 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:49 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:50 AM  Jun 22, 2026)
+          [info] A variation (Amp_coil='1239.4A' move='1mm') has been requested using the following machines: Local Machine. (10:41:51 AM  Jun 22, 2026)
+          [warning] Maxwell2d solver, process solver2d: Internal Solver Warning:  'Beta feature Continuum Air 2D is enabled.' (10:41:52 AM  Jun 22, 2026)
+          [warning] Adaptive Passes did not converge based on specified criteria. (10:41:54 AM  Jun 22, 2026)
+          [info] Parametric Analysis is done. (10:41:54 AM  Jun 22, 2026)
+-- Message Window --
+Stopping Batch Run: 11:22:44 AM  Jun 22, 2026
